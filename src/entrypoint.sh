@@ -18,7 +18,7 @@ fi
 # cat docker/entrypoint-integration-tests.sh
 # cat entrypoint-integration-tests.sh
 
-git config --global --add safe.directory /github/workspace
+git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
 echo "current commit"
 git log -1
